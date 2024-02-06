@@ -1,0 +1,41 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mat-toolbar {
+  background-color: #FF2E63;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.customer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.review {
+  margin: 7px;
+}
+
+.review-date {
+  color: #555;
+  margin: 0;
+}
+
+.customer-feedback {
+  margin: 0;
+}

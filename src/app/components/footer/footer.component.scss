@@ -1,0 +1,53 @@
+.footer {
+    background-color: #FF2E63;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust the logo width as needed */
+  }
+  
+  .contact-details p {
+    margin: 0;
+  }
+  
+  .book-now-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .book-now-link a:hover {
+    background-color: #fff;
+    color: #FF2E63;
+  }
+
+  .quick-links li {
+    margin-bottom: 5px;
+  }
+  
+  .quick-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .quick-links a:hover {
+    text-decoration: underline;
+  }
+  

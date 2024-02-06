@@ -1,0 +1,278 @@
+<!-- booking-form.component.html -->
+<header style="position: relative;">
+  <img src="../../../assets/home-images/imagez.jpg" alt="" style="width: 100%; height: 300px;">
+  <h1 style="position: absolute; top: 61%; left: 20%; transform: translate(-50%, -50%); color: white; font-family: Helvetica, sans-serif; text-align: left">Book Now</h1>
+</header>
+<div class="container">
+  <div class="card-container">
+    <div class="card" >
+      <i class="fa-solid fa-clock" style="margin-top: 20px; text-align: center; color: #5bc2ce"></i>
+        <h4 style="box-sizing: border-box;
+        font-family: Helvetica, Sans-Serif;
+        font-weight: bold;
+        line-height: 1.1;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        text-align: center;
+        padding: 0px 20px;">
+      SAVES YOU TIME</h4>
+        <p style="box-sizing: border-box; color: #6d6e73; text-align: center; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">Our service helps you live smarter, giving you time to focus on what's most important.</p>
+
+
+        <i class="fa-solid fa-shield-heart" style="text-align: center; color: #5bc2ce"></i>
+        <h4 style="box-sizing: border-box;
+         font-family: Helvetica, Sans-Serif;
+        font-weight: bold;
+        line-height: 1.1;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        text-align: center;
+        padding: 0px 20px;">SAFETY FIRST</h4>
+        <p style="box-sizing: border-box; color: #6d6e73;  text-align: center; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">We rigorously vet all professional cleaners, who undergo identity checks as well as in-person interviews.</p>
+        
+        
+        <i class="fa-solid fa-thumbs-up" style="text-align: center; color: #5bc2ce"></i>
+        <h4 style="box-sizing: border-box;
+         font-family: Helvetica, Sans-Serif;
+        font-weight: bold;
+        line-height: 1.1;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        text-align: center;
+        padding: 0px 20px;">ONLY THE BEST QUALITY</h4>
+        <p style="box-sizing: border-box; color: #6d6e73; text-align: center; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">Skilled professionals go above and beyond on every job. Cleaners are rated and reviewed after each task.</p>
+        
+        
+        
+        
+        
+        
+        <i class="fa-solid fa-wand-magic-sparkles" style="text-align: center; color: #5bc2ce"></i>
+        <h4 style="box-sizing: border-box;
+         font-family: Helvetica, Sans-Serif;
+        font-weight: bold;
+        line-height: 1.1;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        text-align: center;
+        padding: 0px 20px;">EASY TO GET HELP</h4>
+        <p style="box-sizing: border-box; color: #6d6e73; text-align: center; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">Select your ZIP code, number of bedrooms and square footage, date and relax while we take care of your home.</p>
+        
+        
+        
+        <i class="fa-regular fa-message" style="text-align: center; color: #5bc2ce"></i>
+        <h4 style="box-sizing: border-box;
+         font-family: Helvetica, Sans-Serif;
+        font-weight: bold;
+        line-height: 1.1;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        text-align: center;
+        padding: 0px 20px;">SEAMLESS COMMUNICATION</h4>
+        <p style="box-sizing: border-box; color: #6d6e73; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">Online communication makes it easy for you to stay in touch with our support team.</p>
+        
+        
+        
+        
+        <i class="fa-brands fa-cc-visa" style="text-align: center; color: #5bc2ce"></i>
+        <h4 style="box-sizing: border-box;
+         font-family: Helvetica, Sans-Serif;
+        font-weight: bold;
+        line-height: 1.1;
+        text-align: center;
+        color: rgb(55, 62, 74);
+        font-size: 14px;
+        margin-top: 8.5px;
+        margin-bottom: 8.5px;
+        padding: 0px 20px;">CASH FREE PAYMENT</h4>
+        <p style="box-sizing: border-box; color: #6d6e73; text-align: center; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">Pay securely online only when the cleaning is complete.</p>
+    </div>
+  </div>
+    <form (ngSubmit)="onSubmit()" #bookNowForm="ngForm" class="form-container">
+      <h2 style="font-family: Helvetica, Sans-Serif; text-align: left; padding-bottom: 10px">Complete your Booking.</h2>
+      <h6 style="font-weight: 100; font-family: proxima,arial;
+      color: #373e4a;">Great! Few details and we can complete your booking. </h6>
+    <hr>
+      <!-- Name Input -->
+      <div class="form-group" style="margin-bottom: 30px;">
+        <label for="name" style="font-weight: 100; font-family: proxima,arial;
+        color: #373e4a;">STEP 1: CHOOSE YOUR SERVICE</label>
+            <span style="font-family: proxima,arial;
+            color: #ababab; font-weight: 100; line-height: 1.42857143;">Tell us about your home.</span>
+            <select id="name" name="name" style="width: 100%;
+            padding: 5px;
+            color: #555; font-weight:200;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;">
+              <option value="Standard" selected style="color: #555; font-weight:200; display: block;">Standard Cleaning Package</option>
+              <option style="color: #555; font-weight:200; display: block;" value="Signature">Signature Cleaning Package</option>
+              <option style="color: #555; font-weight:200; display: block;" value="Platinum">Platinum Cleaning Package</option>
+              <option style="color: #555; font-weight:200; display: block;" value="Laundry">Laundry</option>
+              <option style="color: #555; font-weight:200; display: block;" value="Fridge">Fridge Interior Clean</option>
+              <option style="color: #555; font-weight:200; display: block;" value="Window">Window Sill Cleaning</option>
+              <option style="color: #555; font-weight:200; display: block;" value="Pantry">Pantry Organization</option>
+              <option style="color: #555; font-weight:200; display: block;" value="Closet">Closet Organization</option>
+              <option style="color: #555; font-weight:200; display: block;" value="Vents">Vents Cleaning</option>
+            </select>
+      </div>
+  
+      <!-- Contact Details Input -->
+
+  
+      <!-- Service Type (Multiple Choice Question) -->
+  
+      <!-- Address Input -->
+      
+        <label style="font-weight: 100; font-family: proxima,arial;
+        color: #373e4a;">STEP 2: WHO YOU ARE</label>
+        <span style="font-family: proxima,arial;color: #ababab; font-weight: 100; line-height: 1.42857143;">This information will be used to contact you about your service.</span>
+      <div class="form-group" style="margin-bottom: 30px;">
+        <div style="display: flex; width: 100%; height:80%">
+          <div style="width: 48%;  margin-right: 15px;font:100 16px proxima,Arial,Helvetica,sans-serif">
+            <input type="text" id="first_name" name="first_name" [(ngModel)]="formData.first_name" placeholder="First Name" required>
+          </div>
+          <div style="width: 48%; font:100 16px proxima,Arial,Helvetica,sans-serif">
+            <input type="text" id="last_name" name="last_name" [(ngModel)]="formData.last_name"  placeholder="Last Name" required>
+          </div>
+        </div>
+        <div style="display: flex; width: 100%; height:80%; margin-top:15px">
+          <div style="width: 48%;  margin-right: 15px;font:100 16px proxima,Arial,Helvetica,sans-serif">
+            <input type="text" id="email" name="email" [(ngModel)]="formData.email" placeholder="Email" required>
+          </div>
+          <div style="width: 48%; font:100 16px proxima,Arial,Helvetica,sans-serif">
+            <input type="text" id="mobile_number" name="mobile_number" [(ngModel)]="formData.mobile_number" placeholder="Mobile Number**" required>
+          </div>
+          </div>
+        
+        
+    </div>
+
+      <label style="font-weight: 100; font-family: proxima,arial;
+      color: #373e4a;">STEP 3: YOUR HOME</label>
+        <span style="font-family: proxima,arial;color: #ababab; font-weight: 100; line-height: 1.42857143;">Where would you like us to clean?</span>
+      <div class="form-group" style="margin-bottom: 30px;">
+        <div style="display: flex; width: 100%;">
+
+          <!-- Address takes 100% of the line -->
+          <div style="width: 100%;">
+            <input type="text" id="address" name="address" [(ngModel)]="formData.address" placeholder="Address" required>
+          </div>
+        </div>
+        <div style="display: flex; width: 100%; margin-top: 15px">
+          <div style="width: 40%; margin-right: 10px;">
+            <input type="text" id="apt_suite" name="apt_suite" placeholder="Apt/Suite #" [(ngModel)]="formData.apt_suite">
+          </div>
+          <div style="width: 40%; margin-right: 10px;">
+            <input type="text" id="city" name="city" placeholder="City" [(ngModel)]="formData.city" required>
+          </div>
+          <div style="width: 20%;">
+            <input type="text" id="zip_code" name="zip_code" placeholder="Zip Code" [(ngModel)]="formData.zip_code" required>
+          </div>
+        </div>
+        </div>
+
+        
+          <!-- Apt/Suite #, City, and Zip Code in the same line with a ratio of 4:4:2 -->
+          
+        
+          
+        
+          <label style="font-weight: 100; font-family: proxima,arial;
+          color: #373e4a;">STEP 4: WHEN WOULD YOU LIKE US TO COME?</label>
+      <div class="form-group" style="margin-bottom: 30px;">
+        <div class="row" style="margin-right: 0;">
+          <div class="col-md-6 mb-3">
+            <label for="selected_date" style="font-family: proxima,arial;color: #ababab; font-weight: 100; line-height: 1.42857143;">Choose a Date:</label>
+            <input type="date" id="selected_date" name="selected_date" [(ngModel)]="formData.selected_date" class="form-control" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="selected_time" style="font-family: proxima,arial;color: #ababab; font-weight: 100; line-height: 1.42857143;">Choose a Time:</label>
+            <select id="selected_time" name="selected_time" [(ngModel)]="formData.selected_time" class="form-control" required>
+              <option *ngFor="let hour of generateHours()" [value]="hour">{{ hour }}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+  
+    <div class="form-group" style="margin-bottom: 30px;">
+      <label style="font-weight: 100; font-family: proxima,arial;
+      color: #373e4a;">STEP 5: HOW OFTEN?</label>
+      <span style="font-family: proxima,arial;color: #ababab; font-weight: 100; line-height: 1.42857143;">It's all about matching you with the span erfect clean for your home. Scheduling is flexible.</span>
+      <div class="button-group">
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'every_3_weeks'"
+                  (click)="selectFrequency('every_3_weeks')">Every 3 Weeks</button>
+  
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'one_time'"
+                  (click)="selectFrequency('one_time')">One Time</button>
+  
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'monthly'"
+                  (click)="selectFrequency('monthly')">Monthly</button>
+  
+          <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'biweekly'"
+                  (click)="selectFrequency('biweekly')">Biweekly</button>
+
+                  <button type="button" class="frequency-button"
+                  [class.selected]="formData.cleaning_frequency === 'weekly'"
+                  (click)="selectFrequency('weekly')">Weekly</button>
+      </div>
+  </div>
+  <div class="form-group">
+    <div class="option-container">
+      <input type="checkbox" id="movingInOut" name="movingInOut" value="movingInOut">
+      <label for="movingInOut" class="option-label" style="font-family: proxima,arial;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Moving In/Out</label>
+      <span class="tick"></span>
+    </div>
+    
+    <div class="option-container">
+      <input type="checkbox" id="balconyCleaning" name="balconyCleaning" value="balconyCleaning">
+      <label for="balconyCleaning" class="option-label" style="font-family: proxima,arial;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Balcony Cleaning</label>
+      <span class="tick"></span>
+    </div>
+
+  </div>
+  
+
+  <div class="form-group">
+    <label for="additional_notes" style="font-family: proxima,arial;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Additional Information:</label>
+    <textarea id="additional_notes" name="additional_notes" [(ngModel)]="formData.additional_notes"></textarea>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-6 mb-3">
+      <label class="form-label" for="parking_option" style="font-family: proxima,arial;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Please choose parking option:</label>
+      <select id="parking_option" name="parking_option" [(ngModel)]="formData.parking_option" class="form-select" style="width: 100%;
+      padding: 5px;
+      color: #555; font-weight:200;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;">
+        <option selected style="color: #555; font-weight:200; display: block;" value="street_parking" >Street Parking</option>
+        <option style="color: #555; font-weight:200; display: block;" value="driveway">Driveway</option>
+        <option style="color: #555; font-weight:200; display: block;" value="parking_pass">Parking Pass</option>
+        <option style="color: #555; font-weight:200; display: block;"value="guest_parking">Guest Parking</option>
+        <option style="color: #555; font-weight:200; display: block;" value="parking_lot">Parking Lot</option>
+      </select>
+    </div>
+</div>
+    
+      <button type="submit" [disabled]="!bookNowForm.valid">Submit</button>
+    </form>
+  </div>
+  
