@@ -1,5 +1,5 @@
 // book-now.component.ts
-import { HostListener } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { EmailService } from 'src/app/services/email.service';
@@ -11,7 +11,10 @@ import { EmailService } from 'src/app/services/email.service';
 })
 export class BookNowComponent implements OnInit {
 
-  constructor(private router: Router, private emailService: EmailService) { 
+  serviceTitle: string = "";
+  servicePrice: string = "";
+  serviceArea: string = "";
+  constructor(private router: Router, private emailService: EmailService, private route: ActivatedRoute) { 
     
   }
   
@@ -27,16 +30,71 @@ export class BookNowComponent implements OnInit {
     selected_date: null,
     selected_time: '', 
     selected_service: '', 
+    selected_area: '',
     cleaning_frequency: '',
     movingInOut: false,
     balconyCleaning: false,
     additional_notes: '',
     parking_option: '', 
+    selected_price: 0
   };
 
-
-  ngOnInit(): void {
-   
+  servicePrices: any = {
+    'Standard Cleaning Package': {
+      'Area upto 2500 sq ft': 147,
+      'Area upto 3500 sq ft': 247,
+      'Area upto 5000 sq ft': 347
+    },
+    'Signature Cleaning Package': {
+      'Area upto 2500 sq ft': 247,
+      'Area upto 3500 sq ft': 347,
+      'Area upto 5000 sq ft': 447
+    },
+    'Platinum Cleaning Package': {
+      'Area upto 2500 sq ft': 547,
+      'Area upto 3500 sq ft': 747,
+      'Area upto 5000 sq ft': 947
+    },
+    'Laundry': 34,
+    'Fridge Interior Clean': 27,
+    'Window Sill Cleaning': 27,
+    'Pantry Organization': 57,
+    'Closet Organization': 111,
+    'Vents Cleaning': 37
+  };
+  
+  ngOnInit(){
+    this.route.queryParams.subscribe(params => {
+      this.serviceTitle = params['title'];
+      this.serviceArea = params['area'];
+    });
+  }
+  
+  calculateTotalPrice(): number {
+    const selectedService = this.formData.selected_service;
+    let price = 0;
+    if (['Standard Cleaning Package', 'Signature Cleaning Package', 'Platinum Cleaning Package'].includes(selectedService)) {
+      const selectedArea = this.formData.selected_area;
+      if (this.servicePrices[selectedService] && this.servicePrices[selectedService][selectedArea]) {
+        price = this.servicePrices[selectedService][selectedArea];
+      } else if (this.servicePrices[selectedService]) {
+        price = 0;
+      }
+    } else {
+      price = this.servicePrices[selectedService] || 0;
+    }
+    this.formData.selected_price = price;
+  
+    return price;
+  }
+  
+  showAreaDropdown(): boolean {
+    return ['Standard Cleaning Package', 'Signature Cleaning Package', 'Platinum Cleaning Package'].includes(this.formData.selected_service);
+  }
+  
+  selectArea(selectedArea: string){
+    this.formData.selected_area = selectedArea;
+    this.formData.selected_price = this.calculateTotalPrice();
   }
 
   selectService(selectedService: string): void {
@@ -57,11 +115,13 @@ export class BookNowComponent implements OnInit {
       selected_date,
       selected_time,
       selected_service,
+      selected_area,
       cleaning_frequency,
       movingInOut,
       balconyCleaning,
       additional_notes,
       parking_option,
+      selected_price
     } = formData;
   
     const message = `
@@ -70,13 +130,14 @@ export class BookNowComponent implements OnInit {
       Mobile Number: ${mobile_number}
       Address: ${address} ${apt_suite ? `Apt/Suite: ${apt_suite}` : ''}, ${city}, ${zip_code}
       Date and Time: ${selected_date} ${selected_time}
-      Service: ${selected_service}
+      Service: ${selected_service} ${selected_area}
       Cleaning Frequency: ${cleaning_frequency}
       Additional Notes: ${additional_notes}
       Parking Option: ${parking_option}
       Special Requests:
       - Moving In/Out: ${movingInOut ? 'Yes' : 'No'}
       - Balcony Cleaning: ${balconyCleaning ? 'Yes' : 'No'}
+      Total Amount to be paid: $${selected_price}
     `;
   
     return message;
@@ -87,6 +148,7 @@ export class BookNowComponent implements OnInit {
     this.emailService.sendEmail(this.formData.email, msg).subscribe(
       (response) => {
         console.log('Email sent successfully', response);
+        this.router.navigate(['/']);
       },
       (error) => {
         console.error('Error sending email', error);

@@ -98,6 +98,54 @@
         padding: 0px 20px;">CASH FREE PAYMENT</h4>
         <p style="box-sizing: border-box; color: #6d6e73; text-align: center; margin: 0px 0px 8.5px; padding: 0px 20px 40px; ">Pay securely online only when the cleaning is complete.</p>
     </div>
+  <!-- New Container for Bookingg Summary -->
+  <div class="card" style="margin-top: 3%;">
+    <h2 style="box-sizing: border-box;
+    font-family: Helvetica, Sans-Serif;
+  font-weight: bold;
+  line-height: 1.1;
+  color:  #ff8604;
+  font-size: 24px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-align: center;
+  padding: 0px 20px;">BOOKING SUMMARY</h2>
+    <div style="padding: 1% 3% ; display: flex; align-items: center;">
+      <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
+        <i class="fas fa-home" style="text-align: center; color: #5bc2ce"></i>
+      <h4 style="font-weight: normal; color: rgb(55, 62, 74);">Service:</h4>
+      </div>
+      <h2 style="font-weight: normal; color: #5bc2ce; font-size: 24px; margin-left: 10px;">{{ formData.selected_service }}</h2>
+    </div>
+    <div *ngIf="showAreaDropdown()" style="padding: 1% 3% ; display: flex; align-items: center;">
+      <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
+        <i class="fas fa-city" style="text-align: center; color: #5bc2ce"></i>
+      <h4 style="font-weight: normal; color: rgb(55, 62, 74);">Area:</h4>
+      </div>
+      <h2 style="font-weight: normal; color: #5bc2ce; font-size: 24px; margin-left: 10px;">{{ formData.selected_area }}</h2>
+    </div>
+    <div style="padding: 1% 3% ; display: flex; align-items: center;">
+      <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
+        <i class="fas fa-calendar-alt" style="text-align: center; color: #5bc2ce"></i>
+      <h4 style="font-weight: normal; color: rgb(55, 62, 74);">Date:</h4>
+      </div>
+      <h2 style="font-weight: normal; color: #5bc2ce; font-size: 24px; margin-left: 10px;">{{ formData.selected_date}} {{formData.selected_time}}</h2>
+    </div>
+    <div style="padding: 1% 3% ; display: flex; align-items: center;">
+      <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
+        <i class="fas fa-clock" style="text-align: center; color: #5bc2ce"></i>
+      <h4 style="font-weight: normal; color: rgb(55, 62, 74);">How Often:</h4>
+      </div>
+      <h2 style="font-weight: normal; color: #5bc2ce; font-size: 24px; margin-left: 10px;">{{ formData.cleaning_frequency }}</h2>
+    </div>
+    <div style="padding: 0 3% ; display: flex; align-items: center; justify-content: space-between;">
+      <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
+        <i class="fas fa-money-bill" style="text-align: center; color: #5bc2ce"></i>
+      <h4 style="font-weight: normal; color: rgb(55, 62, 74);">Total:</h4>
+      </div>
+      <h2 style="font-weight: normal; color: #5bc2ce; font-size: 54px; margin-left: 10px;">${{ calculateTotalPrice() }}</h2>
+    </div>
+  </div>
   </div>
     <form (ngSubmit)="onSubmit()" #bookNowForm="ngForm" class="form-container">
       <h2 style="font-family: Helvetica, Sans-Serif; text-align: left; padding-bottom: 10px">Complete your Booking.</h2>
@@ -121,7 +169,14 @@
           <option value="Pantry Organization" (click)="selectService('Pantry Organization')" [selected]="formData.selected_service === 'Pantry Organization'">Pantry Organization</option>
           <option value="Closet Organization" (click)="selectService('Closet Organization')" [selected]="formData.selected_service === 'Closet Organization'">Closet Organization</option>
           <option value="Vents Cleaning" (click)="selectService('Vents Cleaning')" [selected]="formData.selected_service === 'Vents Cleaning'">Vents Cleaning</option>
-        </select>        
+        </select> 
+        
+        <select *ngIf="showAreaDropdown()" id="area" name="area" style="width: 100%; padding: 5px; color: #555; font-weight: 400; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;" [(ngModel)]="formData.selected_area" required>
+          <option value="" style="display: none;" disabled selected>Select the Area Range</option>
+          <option value="Area upto 2500 sq ft" (click)="selectArea('Area upto 2500 sq ft')" [selected]="formData.selected_area === 'Area upto 2500 sq ft'">Area upto 2500 sq ft</option>
+          <option value="Area upto 3500 sq ft" (click)="selectArea('Area upto 3500 sq ft')" [selected]="formData.selected_area === 'Area upto 3500 sq ft'">Area upto 3500 sq ft</option>
+          <option value="Area upto 5000 sq ft" (click)="selectArea('Area upto 5000 sq ft')" [selected]="formData.selected_area === 'Area upto 5000 sq ft'">Area upto 5000 sq ft</option>
+        </select> 
       </div>
   
       <!-- Contact Details Input -->
@@ -208,24 +263,24 @@
       <span style="font-family: proxima,arial;color: #ababab; font-weight: 100; line-height: 1.42857143;">It's all about matching you with the span erfect clean for your home. Scheduling is flexible.</span>
       <div class="button-group">
           <button type="button" class="frequency-button"
-                  [class.selected]="formData.cleaning_frequency === 'every_3_weeks'"
-                  (click)="selectFrequency('every_3_weeks')">Every 3 Weeks</button>
+                  [class.selected]="formData.cleaning_frequency === 'Every 3 Weeks'"
+                  (click)="selectFrequency('Every 3 Weeks')">Every 3 Weeks</button>
   
           <button type="button" class="frequency-button"
-                  [class.selected]="formData.cleaning_frequency === 'one_time'"
-                  (click)="selectFrequency('one_time')">One Time</button>
+                  [class.selected]="formData.cleaning_frequency === 'One Time'"
+                  (click)="selectFrequency('One Time')">One Time</button>
   
           <button type="button" class="frequency-button"
-                  [class.selected]="formData.cleaning_frequency === 'monthly'"
-                  (click)="selectFrequency('monthly')">Monthly</button>
+                  [class.selected]="formData.cleaning_frequency === 'Monthly'"
+                  (click)="selectFrequency('Monthly')">Monthly</button>
   
           <button type="button" class="frequency-button"
-                  [class.selected]="formData.cleaning_frequency === 'biweekly'"
-                  (click)="selectFrequency('biweekly')">Biweekly</button>
+                  [class.selected]="formData.cleaning_frequency === 'Biweekly'"
+                  (click)="selectFrequency('Biweekly')">Biweekly</button>
 
                   <button type="button" class="frequency-button"
-                  [class.selected]="formData.cleaning_frequency === 'weekly'"
-                  (click)="selectFrequency('weekly')">Weekly</button>
+                  [class.selected]="formData.cleaning_frequency === 'Weekly'"
+                  (click)="selectFrequency('Weekly')">Weekly</button>
       </div>
   </div>
   <div class="form-group">
@@ -254,16 +309,16 @@
       <label class="form-label" for="parking_option" style="font-family: proxima,arial;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Please choose parking option:</label>
       <select id="parking_option" name="parking_option" [(ngModel)]="formData.parking_option" class="form-select" style="width: 100%;
       padding: 5px;
-      color: #555; font-weight:200;
+      color: #555; font-weight:400;
       box-sizing: border-box;
       border: 1px solid #ccc;
       border-radius: 5px;
       margin-top: 5px;">
-        <option selected style="color: #555; font-weight:200; display: block;" value="street_parking" >Street Parking</option>
-        <option style="color: #555; font-weight:200; display: block;" value="driveway">Driveway</option>
-        <option style="color: #555; font-weight:200; display: block;" value="parking_pass">Parking Pass</option>
-        <option style="color: #555; font-weight:200; display: block;"value="guest_parking">Guest Parking</option>
-        <option style="color: #555; font-weight:200; display: block;" value="parking_lot">Parking Lot</option>
+        <option selected style="color: #555; font-weight:400; display: block;" value="street_parking" >Street Parking</option>
+        <option style="color: #555; font-weight:400; display: block;" value="driveway">Driveway</option>
+        <option style="color: #555; font-weight:400; display: block;" value="parking_pass">Parking Pass</option>
+        <option style="color: #555; font-weight:400; display: block;"value="guest_parking">Guest Parking</option>
+        <option style="color: #555; font-weight:400; display: block;" value="parking_lot">Parking Lot</option>
       </select>
     </div>
 </div>
