@@ -1,0 +1,63 @@
+.container {
+  padding: 0 160px; /* Space on left and right */
+  margin-top: 20px;
+}
+
+.customer-reviews {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  // position: relative; /* Position for arrow buttons */
+}
+
+.heading {
+  color: #364f6b;
+  text-align: center;
+}
+
+.carousel {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  gap: 20px; /* Space between reviews */
+  overflow: hidden; /* Hide the overflow */
+}
+
+.reviews-container {
+  display: flex;
+  gap: 20px; /* Space between reviews */
+}
+
+.review {
+  width: calc(100% / 3 - 20px); /* Adjusted width for 3 reviews per slide */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  height: 380px;
+}
+
+.customer-name {
+  font-weight: bold;
+  color: #fc5185;
+}
+
+.customer-feedback {
+  color: #000;
+}
+
+.carousel-control-prev-icon {
+  background-color: #fc5185;
+  border-radius: 20px;
+  color: #364f6b;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.carousel-control-next-icon {
+  background-color: #fc5185;
+  border-radius: 20px;
+  color: #364f6b;
+  font-size: 20px;
+  cursor: pointer;
+}

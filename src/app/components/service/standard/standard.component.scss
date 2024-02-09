@@ -1,0 +1,116 @@
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-title h1 {
+    font-size: 64px; /* Adjusted font size */
+    color: #120f0f;
+    padding-top: 3.6%; /* Custom top padding */
+    padding-right: 20px; /* Adjust the right padding as needed */
+    padding-bottom: 10px; /* Adjust the bottom padding as needed */
+    padding-left: 20px; /* Adjust the left padding as needed */
+    font-family: 'Helvetica' /* Set Dancing Script as the font family */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap as needed */
+    max-width: 1000px; /* Increased overall box size */
+    margin: 0 auto; /* Center the container */
+}
+
+.living-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.kitchen-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.bathroom-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adjusted margin-bottom */
+}
+
+.column {
+    flex: 1;
+    min-width: 0;
+}
+
+.section {
+    display: flex;
+    background-color: #f0f0f0; /* Box background color */
+    padding: 20px; /* Increased padding */
+    border-radius: 12px; /* Increased border radius */
+}
+
+.text {
+    width: auto; /* Set a fixed width for text container */
+    font-family: 'Helvetica';
+}
+
+.image-container {
+    width: 35%; /* Adjust width as needed */
+    height: 100%; /* Set image container height to 100% */
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.living-container .image-container img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px;
+}
+
+.kitchen-container .image-container img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px;
+}
+
+.bathroom-container .image-container img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px;
+}
+
+p {
+    font-size: 24px; /* Increased font size */
+    line-height: 1.5;
+    color: #333;
+}
+
+.highlight {
+    color: #000;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.sub-highlight {
+    color: #000;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px; /* Adjusted margin-top */
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 20px; /* Increased font size */
+    line-height: 1.5;
+    color: #555;
+}

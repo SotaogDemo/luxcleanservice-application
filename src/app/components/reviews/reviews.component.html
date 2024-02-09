@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="customer-reviews">
+    <h3 class="heading">Customer Reviews</h3>
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div
+          *ngFor="let chunk of reviewsChunks; let i = index"
+          class="carousel-item"
+          [ngClass]="{ active: i === currentIndex }"
+        >
+          <div class="reviews-container">
+            <div class="review" *ngFor="let review of chunk">
+              <p class="customer-name">{{ review.customerName }}</p>
+              <p class="customer-feedback">{{ review.feedback }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        (click)="shiftReviews('left')"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        (click)="shiftReviews('right')"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</div>

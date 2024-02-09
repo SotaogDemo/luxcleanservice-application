@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="faq-section">
+    <h3 class="heading">FAQs</h3>
+    <div *ngFor="let faqItem of faqItems" class="faq-item">
+      <div class="question" (click)="toggleAnswer(faqItem)">
+        <h3>{{ faqItem.question }}</h3>
+        <span class="toggle-icon">{{ faqItem.isOpen ? '-' : '+' }}</span>
+      </div>
+      <div *ngIf="faqItem.isOpen" class="answer">
+        <p>{{ faqItem.answer }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
