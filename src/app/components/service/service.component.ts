@@ -20,8 +20,13 @@ export class ServiceComponent implements OnInit {
     this.selectedArea = target.value !== 'null' ? target.value : null;
   }
 
-  bookNow() {
-    this.router.navigate(['/book-now']);
+  bookNow(serviceTitle: string, serviceArea: number) {
+    this.router.navigate(['/book-now'], {
+      queryParams: {
+        title: serviceTitle,
+        area: serviceArea.toString(),
+      }
+    });
   }
 
   standardinfo(){
