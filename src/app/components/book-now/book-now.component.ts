@@ -43,16 +43,16 @@ export class BookNowComponent implements OnInit {
     'Standard Cleaning Package': {
       'Area upto 2500 sq ft': 147,
       'Area upto 3500 sq ft': 247,
-      'Area upto 5000 sq ft': 347
+      'Area upto 5000 sq ft': 547
     },
     'Signature Cleaning Package': {
       'Area upto 2500 sq ft': 247,
       'Area upto 3500 sq ft': 347,
-      'Area upto 5000 sq ft': 447
+      'Area upto 5000 sq ft': 747
     },
     'Platinum Cleaning Package': {
-      'Area upto 2500 sq ft': 547,
-      'Area upto 3500 sq ft': 747,
+      'Area upto 2500 sq ft': 347,
+      'Area upto 3500 sq ft': 447,
       'Area upto 5000 sq ft': 947
     },
     'Laundry': 34,
