@@ -66,8 +66,14 @@ export class BookNowComponent implements OnInit {
   ngOnInit(){
     this.route.queryParams.subscribe(params => {
       this.serviceTitle = params['title'];
-      this.serviceArea = params['area'];
+      this.serviceArea = params['area'].toString();
     });
+    if(this.serviceTitle){
+      this.formData.selected_service = this.serviceTitle;
+      if(this.serviceArea){
+        this.formData.selected_area  = 'Area upto ' + this.serviceArea + ' sq ft';
+      }
+    }
   }
   
   calculateTotalPrice(): number {
