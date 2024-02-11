@@ -2,14 +2,14 @@
 <header style="position: relative;">
   <img src="../../../assets/home-images/imagez.jpg" alt="" style="width: 100%; height: 300px;">
   <h1 style="position: absolute; top: 61%; left: 50%; transform: translate(-50%, -50%); 
-  color: white; font-family: Helvetica, sans-serif; text-align: left; font-weight: bold; font-size: 50px;">Book Now</h1>
+  color: white; font-family: Roboto; text-align: left; font-weight: bold; font-size: 50px;">Book Now</h1>
 </header>
 <div class="container">
   <div class="card-container">
-    <div class="card" >
+    <div class="card">
       <i class="fa-solid fa-clock" style="margin-top: 20px; text-align: center; color: #5bc2ce"></i>
         <h4 style="box-sizing: border-box;
-        font-family: Helvetica, Sans-Serif;
+        font-family: Roboto;
         font-weight: bold;
         line-height: 1.1;
         color: rgb(55, 62, 74);
@@ -24,7 +24,7 @@
 
         <i class="fa-solid fa-shield-heart" style="text-align: center; color: #5bc2ce"></i>
         <h4 style="box-sizing: border-box;
-         font-family: Helvetica, Sans-Serif;
+         font-family: Roboto;
         font-weight: bold;
         line-height: 1.1;
         color: rgb(55, 62, 74);
@@ -38,7 +38,7 @@
         
         <i class="fa-solid fa-thumbs-up" style="text-align: center; color: #5bc2ce"></i>
         <h4 style="box-sizing: border-box;
-         font-family: Helvetica, Sans-Serif;
+         font-family: Roboto;
         font-weight: bold;
         line-height: 1.1;
         color: rgb(55, 62, 74);
@@ -56,7 +56,7 @@
         
         <i class="fa-solid fa-wand-magic-sparkles" style="text-align: center; color: #5bc2ce"></i>
         <h4 style="box-sizing: border-box;
-         font-family: Helvetica, Sans-Serif;
+         font-family: Roboto;
         font-weight: bold;
         line-height: 1.1;
         color: rgb(55, 62, 74);
@@ -71,7 +71,7 @@
         
         <i class="fa-regular fa-message" style="text-align: center; color: #5bc2ce"></i>
         <h4 style="box-sizing: border-box;
-         font-family: Helvetica, Sans-Serif;
+         font-family: Roboto;
         font-weight: bold;
         line-height: 1.1;
         color: rgb(55, 62, 74);
@@ -87,7 +87,7 @@
         
         <i class="fa-brands fa-cc-visa" style="text-align: center; color: #5bc2ce"></i>
         <h4 style="box-sizing: border-box;
-         font-family: Helvetica, Sans-Serif;
+         font-family: Roboto;
         font-weight: bold;
         line-height: 1.1;
         text-align: center;
@@ -101,8 +101,7 @@
   <!-- New Container for Bookingg Summary -->
   <div class="card" style="margin-top: 3%;">
     <h2 style="box-sizing: border-box;
-    font-family: Helvetica, Sans-Serif;
-  font-weight: bold;
+    font-family: Roboto;
   line-height: 1.1;
   color:  #ff8604;
   font-size: 24px;
@@ -113,50 +112,50 @@
     <div style="padding: 1% 3% ; display: flex; align-items: center;">
       <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
         <i class="fas fa-home" style="text-align: center; color: #5bc2ce"></i>
-      <h4 style="font-weight: normal; color: rgb(55, 62, 74);">Service:</h4>
+      <h4 style="font-weight: normal; font-family: Roboto; color: rgb(55, 62, 74);">Service:</h4>
       </div>
       <h2 style="font-weight: normal; color: #5bc2ce; font-size: 24px; margin-left: 10px;">{{ formData.selected_service }}</h2>
     </div>
     <div *ngIf="showAreaDropdown()" style="padding: 1% 3% ; display: flex; align-items: center;">
       <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
         <i class="fas fa-city" style="text-align: center; color: #5bc2ce"></i>
-      <h4 style="font-weight: normal; color: rgb(55, 62, 74);">Area:</h4>
+      <h4 style="font-weight: normal; font-family: Roboto; color: rgb(55, 62, 74);">Area:</h4>
       </div>
       <h2 style="font-weight: normal; color: #5bc2ce; font-size: 24px; margin-left: 10px;">{{ formData.selected_area }}</h2>
     </div>
     <div style="padding: 1% 3% ; display: flex; align-items: center;">
       <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
         <i class="fas fa-calendar-alt" style="text-align: center; color: #5bc2ce"></i>
-      <h4 style="font-weight: normal; color: rgb(55, 62, 74);">Date:</h4>
+      <h4 style="font-weight: normal; font-family: Roboto; color: rgb(55, 62, 74);">Date:</h4>
       </div>
       <h2 style="font-weight: normal; color: #5bc2ce; font-size: 24px; margin-left: 10px;">{{ formData.selected_date}} {{formData.selected_time}}</h2>
     </div>
     <div style="padding: 1% 3% ; display: flex; align-items: center;">
       <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
         <i class="fas fa-clock" style="text-align: center; color: #5bc2ce"></i>
-      <h4 style="font-weight: normal; color: rgb(55, 62, 74);">How Often:</h4>
+      <h4 style="font-weight: normal; font-family: Roboto; color: rgb(55, 62, 74);">How Often:</h4>
       </div>
       <h2 style="font-weight: normal; color: #5bc2ce; font-size: 24px; margin-left: 10px;">{{ formData.cleaning_frequency }}</h2>
     </div>
     <div style="padding: 0 3% ; display: flex; align-items: center; justify-content: space-between;">
       <div style="gap: 15px;display: flex; align-items: center; justify-content: space-between;">
         <i class="fas fa-money-bill" style="text-align: center; color: #5bc2ce"></i>
-      <h4 style="font-weight: normal; color: rgb(55, 62, 74);">Total:</h4>
+      <h4 style="font-weight: normal; font-family: Roboto; color: rgb(55, 62, 74);">Total:</h4>
       </div>
-      <h2 style="font-weight: normal; color: #5bc2ce; font-size: 54px; margin-left: 10px;">${{ calculateTotalPrice() }}</h2>
+      <h2 style="font-weight: normal; font-family: Roboto; color: #5bc2ce; font-size: 54px; margin-left: 10px;">${{ calculateTotalPrice() }}</h2>
     </div>
   </div>
   </div>
-    <form (ngSubmit)="onSubmit()" #bookNowForm="ngForm" class="form-container">
-      <h2 style="font-family: Helvetica, Sans-Serif; text-align: left; padding-bottom: 10px">Complete your Booking.</h2>
-      <h6 style="font-weight: 100; font-family: proxima,arial;
+    <form (ngSubmit)="onSubmit()" #bookNowForm="ngForm" class="form-container" style="margin-right: 12%;">
+      <h2 style="font-family: Roboto; text-align: left; padding-bottom: 10px">Complete your Booking.</h2>
+      <h6 style="font-weight: 100; font-family: Roboto;
       color: #373e4a;">Great! Few details and we can complete your booking. </h6>
     <hr>
       <!-- Name Input -->
       <div class="form-group" style="margin-bottom: 30px;">
-        <label for="name" style="font-weight: 100; font-family: proxima,arial;
+        <label for="name" style="font-weight: 100; font-family: Roboto;
         color: #373e4a;">STEP 1: CHOOSE YOUR SERVICE</label>
-            <span style="font-family: proxima,arial;
+            <span style="font-family: Roboto;
             color: #ababab; font-weight: 100; line-height: 1.42857143;">Tell us about your home.</span>
         <select id="name" name="name" style="width: 100%; padding: 5px; color: #555; font-weight: 400; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;" [(ngModel)]="formData.selected_service" required>
           <option value="" style="display: none;" disabled selected>Select a Service</option>
@@ -186,23 +185,23 @@
   
       <!-- Address Input -->
       
-        <label style="font-weight: 100; font-family: proxima,arial;
+        <label style="font-weight: 100; font-family: Roboto;
         color: #373e4a;">STEP 2: WHO YOU ARE</label>
-        <span style="font-family: proxima,arial;color: #ababab; font-weight: 100; line-height: 1.42857143;">This information will be used to contact you about your service.</span>
+        <span style="font-family: Roboto;color: #ababab; font-weight: 100; line-height: 1.42857143;">This information will be used to contact you about your service.</span>
       <div class="form-group" style="margin-bottom: 30px;">
         <div style="display: flex; width: 100%; height:80%">
-          <div style="width: 48%;  margin-right: 15px;font:100 16px proxima,Arial,Helvetica,sans-serif">
+          <div style="width: 48%;  margin-right: 15px;font:100 16px Roboto,Roboto">
             <input type="text" id="first_name" name="first_name" [(ngModel)]="formData.first_name" placeholder="First Name" required>
           </div>
-          <div style="width: 48%; font:100 16px proxima,Arial,Helvetica,sans-serif">
+          <div style="width: 48%; font:100 16px Roboto,Roboto">
             <input type="text" id="last_name" name="last_name" [(ngModel)]="formData.last_name"  placeholder="Last Name" required>
           </div>
         </div>
         <div style="display: flex; width: 100%; height:80%; margin-top:15px">
-          <div style="width: 48%;  margin-right: 15px;font:100 16px proxima,Arial,Helvetica,sans-serif">
+          <div style="width: 48%;  margin-right: 15px;font:100 16px Roboto,Roboto">
             <input type="text" id="email" name="email" [(ngModel)]="formData.email" placeholder="Email" required>
           </div>
-          <div style="width: 48%; font:100 16px proxima,Arial,Helvetica,sans-serif">
+          <div style="width: 48%; font:100 16px Roboto,Roboto">
             <input type="text" id="mobile_number" name="mobile_number" [(ngModel)]="formData.mobile_number" placeholder="Mobile Number**" required>
           </div>
           </div>
@@ -210,9 +209,9 @@
         
     </div>
 
-      <label style="font-weight: 100; font-family: proxima,arial;
+      <label style="font-weight: 100; font-family: Roboto;
       color: #373e4a;">STEP 3: YOUR HOME</label>
-        <span style="font-family: proxima,arial;color: #ababab; font-weight: 100; line-height: 1.42857143;">Where would you like us to clean?</span>
+        <span style="font-family: Roboto;color: #ababab; font-weight: 100; line-height: 1.42857143;">Where would you like us to clean?</span>
       <div class="form-group" style="margin-bottom: 30px;">
         <div style="display: flex; width: 100%;">
 
@@ -240,16 +239,16 @@
         
           
         
-          <label style="font-weight: 100; font-family: proxima,arial;
+          <label style="font-weight: 100; font-family: Roboto;
           color: #373e4a;">STEP 4: WHEN WOULD YOU LIKE US TO COME?</label>
       <div class="form-group" style="margin-bottom: 30px;">
         <div class="row" style="margin-right: 0;">
           <div class="col-md-6 mb-3">
-            <label for="selected_date" style="font-family: proxima,arial;color: #ababab; font-weight: 100; line-height: 1.42857143;">Choose a Date:</label>
+            <label for="selected_date" style="font-family: Roboto;color: #ababab; font-weight: 100; line-height: 1.42857143;">Choose a Date:</label>
             <input type="date" id="selected_date" name="selected_date" [(ngModel)]="formData.selected_date" class="form-control" required>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="selected_time" style="font-family: proxima,arial;color: #ababab; font-weight: 100; line-height: 1.42857143;">Choose a Time:</label>
+            <label for="selected_time" style="font-family: Roboto;color: #ababab; font-weight: 100; line-height: 1.42857143;">Choose a Time:</label>
             <select id="selected_time" name="selected_time" [(ngModel)]="formData.selected_time" class="form-control" required>
               <option *ngFor="let hour of generateHours()" [value]="hour">{{ hour }}</option>
             </select>
@@ -258,9 +257,9 @@
       </div>
   
     <div class="form-group" style="margin-bottom: 30px;">
-      <label style="font-weight: 100; font-family: proxima,arial;
+      <label style="font-weight: 100; font-family: Roboto;
       color: #373e4a;">STEP 5: HOW OFTEN?</label>
-      <span style="font-family: proxima,arial;color: #ababab; font-weight: 100; line-height: 1.42857143;">It's all about matching you with the span erfect clean for your home. Scheduling is flexible.</span>
+      <span style="font-family: Roboto;color: #ababab; font-weight: 100; line-height: 1.42857143;">It's all about matching you with the span erfect clean for your home. Scheduling is flexible.</span>
       <div class="button-group">
           <button type="button" class="frequency-button"
                   [class.selected]="formData.cleaning_frequency === 'Every 3 Weeks'"
@@ -286,13 +285,13 @@
   <div class="form-group">
     <div class="option-container">
       <input type="checkbox" id="movingInOut" name="movingInOut" value="movingInOut">
-      <label for="movingInOut" class="option-label" style="font-family: proxima,arial;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Moving In/Out</label>
+      <label for="movingInOut" class="option-label" style="font-family: Roboto;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Moving In/Out</label>
       <span class="tick"></span>
     </div>
     
     <div class="option-container">
       <input type="checkbox" id="balconyCleaning" name="balconyCleaning" value="balconyCleaning">
-      <label for="balconyCleaning" class="option-label" style="font-family: proxima,arial;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Balcony Cleaning</label>
+      <label for="balconyCleaning" class="option-label" style="font-family: Roboto;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Balcony Cleaning</label>
       <span class="tick"></span>
     </div>
 
@@ -300,13 +299,13 @@
   
 
   <div class="form-group">
-    <label for="additional_notes" style="font-family: proxima,arial;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Additional Information:</label>
+    <label for="additional_notes" style="font-family: Roboto;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Additional Information:</label>
     <textarea id="additional_notes" name="additional_notes" [(ngModel)]="formData.additional_notes"></textarea>
   </div>
 
   <div class="form-group">
     <div class="col-md-6 mb-3">
-      <label class="form-label" for="parking_option" style="font-family: proxima,arial;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Please choose parking option:</label>
+      <label class="form-label" for="parking_option" style="font-family: Roboto;color: #373e4a; font-weight: 100; line-height: 1.42857143;">Please choose parking option:</label>
       <select id="parking_option" name="parking_option" [(ngModel)]="formData.parking_option" class="form-select" style="width: 100%;
       padding: 5px;
       color: #555; font-weight:400;
