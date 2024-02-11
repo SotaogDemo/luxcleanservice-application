@@ -64,6 +64,7 @@ button:disabled {
   cursor: pointer;
   color: black;
   margin-right: 10px;
+  font-family: 'Roboto';
 }
 
 .frequency-button.selected {
@@ -74,6 +75,10 @@ button:disabled {
 
 .container {
   display: flex;
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 
@@ -103,13 +108,13 @@ button:disabled {
 }
 
 .form-container {
-  width: 50%; /* Adjust the width as needed */
+  width: 100%; /* Adjust the width as needed */
   padding: 20px; /* Add padding for spacing */
 }
 
 .card-container {
-  width: 50%; /* Adjust the width as needed */
-  padding: 20px; /* Add padding for spacing */
+  width: 100%; /* Adjust the width as needed */
+  margin-top: 2%;
 }
 
 .option-container {
