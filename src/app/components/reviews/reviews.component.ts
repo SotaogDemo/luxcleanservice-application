@@ -95,7 +95,7 @@ export class ReviewsComponent implements OnInit {
 
   chunkReviews() {
     const chunkSize = 3; // Set chunk size to 3 for 3 reviews per slide
-    for (let i = 0; i < this.reviews.length; i++) {
+    for (let i = 0; i < this.reviews.length - 2; i++) {
       this.reviewsChunks.push(this.reviews.slice(i, i + chunkSize));
     }
   }
