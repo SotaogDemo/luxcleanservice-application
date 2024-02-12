@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+:host {
+  font-family: Helvetica, sans-serif; /* Fallback font families */
+}
+
 .html {
   font-size: 62.5%;
 }

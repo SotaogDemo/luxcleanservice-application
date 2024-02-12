@@ -1,5 +1,9 @@
 /* booking-form.component.css */
 
+:host {
+  font-family: Helvetica, sans-serif; /* Fallback font families */
+}
+
 .booking-form-container {
   max-width: 600px;
   margin: 0 auto;
@@ -83,7 +87,7 @@ button:disabled {
 
 
 .submit-button:disabled {
-  background-color: #4caf50; /* Green */
+  background-color: #fc5185; /* Green */
   border: none;
   color: white;
   padding: 5px 25px;

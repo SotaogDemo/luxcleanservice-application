@@ -1,3 +1,7 @@
+:host {
+    font-family: Helvetica, sans-serif; /* Fallback font families */
+}
+
 .page-container {
     margin: 0 auto;
 }
@@ -7,7 +11,7 @@
     margin-bottom: 16px;
     margin-left: 20px;
     margin-top: 20px;
-    color: #2c3e50;
+    color: #364F6B;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     font-family: 'Helvetica';
 }
@@ -15,7 +19,7 @@
 .page-container h1 {
     font-size: 250%;
     color: #120f0f;
-    font-family: 'Roboto';
+    // font-family: 'Roboto';
     text-align: center;
     margin-top: 20px;
 }
@@ -34,6 +38,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     padding: 1%;
+    background-color: #F5F5F5;
 }
 
 .card-image {
@@ -54,7 +59,7 @@
     font-size: 130%;
     margin-bottom: 30px;
     text-align: left;
-    font-family: 'Roboto';
+    // font-family: 'Roboto';
     font-weight: bold;
 }
 
@@ -63,17 +68,18 @@
     text-align: left;
     font-size: 180%;
     font-weight: 700;
-    font-family: 'Roboto';
+    // font-family: 'Roboto';
 }
 
 .btn {
-    background-color: #FF2E63;
+    background-color: #fc5185;
     color: #fff;
     padding: 8px 10px;  /* Adjusted padding for a smaller size */
     border: none;
     border-radius: 80px;
     cursor: pointer;
-    font-family: 'Roboto';
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    // font-family: 'Roboto';
 }
 
 .card-container {
@@ -94,15 +100,15 @@
 }
 
 .card:hover {
-    border: 2px solid #FF2E63; 
+    border: 2px solid #fc5185; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
 }
 
 .info-btn {
-    background-color: #FF2E63;
+    background-color: #fc5185;
     color: #fff; 
-    border: none;
-    border-radius: 50%; 
+    border: 10px;
+    border-radius: 100%; 
     cursor: pointer;
     transition: background-color 0.3s ease; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
