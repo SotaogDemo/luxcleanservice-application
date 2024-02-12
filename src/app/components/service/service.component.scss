@@ -18,7 +18,7 @@
 
 .page-container h1 {
     font-size: 250%;
-    color: #120f0f;
+    color: #364F6B;
     // font-family: 'Roboto';
     text-align: center;
     margin-top: 20px;
@@ -61,10 +61,11 @@
     text-align: left;
     // font-family: 'Roboto';
     font-weight: bold;
+    color: #364F6B;
 }
 
 .card-description {
-    color: #555;
+    color: #3FC1C9;
     text-align: left;
     font-size: 180%;
     font-weight: 700;
@@ -107,7 +108,6 @@
 .info-btn {
     background-color: #fc5185;
     color: #fff; 
-    border: 10px;
     border-radius: 100%; 
     cursor: pointer;
     transition: background-color 0.3s ease; 
@@ -115,17 +115,20 @@
 }
 
 .info-btn i {
-    font-size: 150%; 
+    font-size: 120%; 
 }
 
 .custom-select {
     font-size: 120%; 
     font-weight: 500;
     padding-left: 2%;
+    color: #364F6B;
 }
 
 .input-group-text {
     font-size: 120%; 
+    color: #fff;
+    background-color: #3FC1C9;
 }
 
 .container {
