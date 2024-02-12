@@ -16,6 +16,5 @@ export class HomeComponent implements OnInit {
 
   bookNow() {
     this.router.navigate(['/book-now']);
-    console.log('Book Now clicked!');
   }
 }
