@@ -1,5 +1,5 @@
 :host {
-    font-family: Roboto; /* Fallback font families */
+    font-family: 'Roboto'; /* Fallback font families */
 }
 
 .page-container {
@@ -65,7 +65,7 @@
 }
 
 .card-description {
-    color: #3FC1C9;
+    color: #fc5185;
     text-align: left;
     font-size: 180%;
     font-weight: 700;
@@ -128,7 +128,8 @@
 .input-group-text {
     font-size: 120%; 
     color: #fff;
-    background-color: #3FC1C9;
+    border-radius: 0%;
+    background-color: #fc5185;
 }
 
 .container {
