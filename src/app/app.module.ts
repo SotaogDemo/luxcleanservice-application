@@ -19,6 +19,7 @@ import { SignatureComponent } from './components/service/signature/signature.com
 import { PlatinumComponent } from './components/service/platinum/platinum.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -50,7 +51,8 @@ const routes: Routes = [
     MatCardModule,
     MatExpansionModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

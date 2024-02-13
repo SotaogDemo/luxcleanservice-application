@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { fadeInOutAnimation } from 'src/app/animations';
 
 @Component({
   selector: 'app-service',
   templateUrl: './service.component.html',
-  styleUrls: ['./service.component.scss']
+  styleUrls: ['./service.component.scss'],
+  animations: [fadeInOutAnimation],
 })
 export class ServiceComponent implements OnInit {
 

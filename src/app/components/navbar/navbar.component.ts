@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -7,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private location: Location) { }
 
   ngOnInit(): void {
   }
@@ -18,5 +20,10 @@ export class NavbarComponent implements OnInit {
 
   viewServiceandPrices(){
     this.router.navigate(['/service'])
+  }
+
+  reloadPage(): void {
+    this.location.replaceState('/'); // Navigate to the current route (home in this case)
+    window.location.reload(); // Reload the page
   }
 }
