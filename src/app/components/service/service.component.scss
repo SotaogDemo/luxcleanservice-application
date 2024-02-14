@@ -26,8 +26,8 @@
 
 .page-container {
     text-align: left;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 11%;
+    margin-right: 11%;
     margin-top: 3%;
 }
 
@@ -39,6 +39,7 @@
     width: 100%;
     padding: 1%;
     background-color: #F5F5F5;
+    height: 400px;
 }
 
 .card-image {
@@ -56,6 +57,7 @@
 }
 
 .card-title {
+    padding-top: 3%;
     font-size: 130%;
     margin-bottom: 30px;
     text-align: left;
