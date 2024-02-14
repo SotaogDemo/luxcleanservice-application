@@ -8,8 +8,9 @@
 }
 
 .page-title h1 {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     font-size: 250%; /* Adjusted font size */
-    color: #120f0f;
+    color: #364F6B;
     padding-top: 6.6%; /* Custom top padding */
     padding-right: 20px; /* Adjust the right padding as needed */
     padding-bottom: 10px; /* Adjust the bottom padding as needed */
@@ -52,7 +53,7 @@
 
 .section {
     display: flex;
-    background-color: #f0f0f0; /* Box background color */
+    background-color: #F5F5F5; /* Box background color */
     padding: 20px; /* Increased padding */
     border-radius: 12px; /* Increased border radius */
 }
@@ -93,11 +94,11 @@
 p {
     font-size: 24px; /* Increased font size */
     line-height: 1.5;
-    color: #333;
+    color: #000;
 }
 
 .highlight {
-    color: #000;
+    color: #FC5185;
     font-weight: bold;
     font-size: larger;
 }
@@ -117,5 +118,5 @@ ul {
 li {
     font-size: 20px; /* Increased font size */
     line-height: 1.5;
-    color: #555;
+    color: #364F6B;
 }
