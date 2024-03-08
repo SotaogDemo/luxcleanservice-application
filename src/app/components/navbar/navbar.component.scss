@@ -6,8 +6,37 @@
   margin: 0;
 }
 
+
 :host {
-  font-family: Roboto; /* Fallback font families */
+  font-family: Helvetica; /* Fallback font families */
+}
+
+.navitem{
+  width: 157px;
+  height: 30px;
+  top: 8px;
+  font-family: Helvetica;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+}
+
+.book-now-btn {
+  //box-sizing: content-box;
+  font-size: 15px;
+  margin-left: 5px;
+  font-weight: 400;
+  line-height: 35px;
+  border-radius: 12px;
+  position: relative;
+  top: 3px;
+  gap: 6px;
+  position: relative;
+  color: #fff;
+  background-color: rgba(236, 181, 2, 1);
 }
 
 .html {
@@ -21,30 +50,11 @@ body {
 .container {
     max-width: 1200px;
     width: 90%;
-    margin: auto;
+    margin-left: 120px;
+    margin-right:120px; 
   }
   
-  .btn {
-    display: inline-block;
-    padding: 0.5em 1.5em;
-    text-decoration: none;
-    border-radius: 50px;
-    cursor: pointer;
-    outline: none;
-    margin-top: 1em;
-    text-transform: uppercase;
-    font-weight: small;
-  }
   
-  .btn-primary {
-    color: #fff;
-    background: #16a083;
-  }
-  
-  .btn-primary:hover {
-    background: #117964;
-    transition: background 0.3s ease-in-out;
-  }
   
   /* ............/navbar/............ *
   
@@ -57,20 +67,37 @@ body {
     background: #fff;
     color: #364F6B;
     opacity: 0.85;
-    height: 60px;
+    height: 55px;
     z-index: 12;
   }
   
   .navbar-container {
     display: flex;
     justify-content: space-between;
-    height: 64px;
+    height: 55px;
     align-items: center;
   }
   
   .menu-items {
     order: 2;
+    gap: 15px;
     display: flex;
+  }
+
+  .btnz{
+    margin: auto;
+    margin-top: 7px;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-bottom:  5px;
+    padding-right: 7px;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    margin-left: 20px;
+    color: #fff;
   }
   
   .menu-items li {
@@ -94,10 +121,19 @@ body {
   }
   
   .logo {
-    order: 1;
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    margin-left: 28px;
+    //order: 1;
+    //width: 301px;
+    height: 35px;
+    top: 2px;
+    margin-left: 0px;
+    font-family: Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    margin-bottom: 5px;
     cursor: pointer;
   }
 
@@ -106,16 +142,11 @@ body {
 }
 
 .navbar-container .menu-items .book-now-btn a {
-  background-color: #FC5185;
+  background-color: rgba(236, 181, 2, 1);
   color: #fff;
   padding:5px 5px;
   // border: none;
-  border-radius: 5px;
+  //border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
-}
-
-.navbar-container .menu-items .book-now-btn a:hover {
-  background-color: #F5F5F5;
-  color: #FC5185;
 }
