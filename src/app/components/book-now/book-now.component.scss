@@ -1,7 +1,7 @@
 /* booking-form.component.css */
 
 :host {
-  font-family: Roboto; /* Fallback font families */
+  font-family: Arial, Helvetica, sans-serif; /* Fallback font families */
 }
 
 .booking-form-container {
@@ -68,7 +68,7 @@ button:disabled {
   cursor: pointer;
   color: black;
   margin-right: 10px;
-  font-family: 'Roboto';
+  font-family: 'Helvetica';
 }
 
 .frequency-button.selected {
@@ -87,7 +87,7 @@ button:disabled {
 
 
 .submit-button:disabled {
-  background-color: #fc5185; /* Green */
+  background-color: rgba(236, 181, 2, 1); /* Green */
   border: none;
   color: white;
   padding: 5px 25px;
