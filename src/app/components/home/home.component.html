@@ -1,86 +1,38 @@
 <div class="landing-image">
-  <div class="landing-content cont" [@slideDown]>
+  <div class="landing-content cont">
     <h1 class="company-name2">Welcome to a</h1>
     <h1 class="company-name1">Cleaner Home!</h1>
-    <h4 class="company-text">LuxClean is the premier cleaning service in your local area.
-      We offer reliable and high-quality cleaning services across the city.</h4>
+    <h4 class="company-text">LuxClean is the premier cleaning service in your local area. We offer reliable and high-quality cleaning services across the city.</h4>
     <h4 class="company-number">Call us at +1234567890</h4>
-    <span routerLink="/book-now" class="book-now-btn" >Book a Service</span>
+    <span class="book-now-btn" routerLink="/book-now">Book a Service</span>
   </div>
-</div>  
-<div>
-  
 </div>
 
-<div class="about-us-container" style="background: rgba(249, 251, 254, 1);">
+<div class="about-us-container">
     <div class="row">
-        <div class="col-md-6">
-          <div class="container" style="padding-left: 0px; height: 500px; background: rgba(249, 251, 254, 1);">
-            <div class="box A" style="padding-left: 0px"></div>
+        <div class="col-md-6 col-sm-12">
+          <div class="container">
+            <div class="box A ml-5"></div>
             <div class="box B shadow p-3 mb-5 bg-white rounded">
-              <div class="row" style="text-align: center; padding-bottom: 0px; margin-bottom: 0px; color: rgba(81, 101, 123, 1);">
-                <H1 style="padding-bottom: 0px;">20+</H1>
-                <div class="w-100" style="text-align: center; padding-bottom: 0px; margin-bottom: 0px; color: rgba(81, 101, 123, 1);"></div>
-                <h4>Years of Service</h4>
-              </div>
-              
-              
-              </div>
-            <div class="box C shadow p-3 mb-5 bg-white rounded">
-              <div class="row" style="text-align: center; padding-bottom: 0px; margin-bottom: 0px; color: rgba(81, 101, 123, 1);">
-                <H1 style="padding-bottom: 0px;">300+</H1>
-                <div class="w-100" style="text-align: center; padding-bottom: 0px; margin-bottom: 0px; color: rgba(81, 101, 123, 1);"></div>
-                <h4>Happy Clients</h4>
+              <div class="row box-content">
+                <h1 class="first-line">20+</h1>
+                <h4 class="first-line">Years of Service</h4>
               </div>
             </div>
-            
+            <div class="box C shadow p-3 mb-5 bg-white rounded">
+              <div class="row box-content">
+                <h1 class="first-line">300+</h1>
+                <h4 class="first-line">Happy Clients</h4>
+              </div>
+            </div>
             <div class="box D"></div>
           </div>
         </div>
-        <div class="col-md-6" style="margin-top:20px">
-            <h2 style="font-family: Helvetica;
-            font-size: 17px;
-            font-weight: 400;
-            line-height: 35px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: rgba(81, 101, 123, 1);
-            ">___ About us ___</h2>
-            <h1 style="font-family: Helvetica;
-            font-size: 45px;
-            font-weight: 400;
-            line-height: 35px;
-            letter-spacing: 0em;
-            text-align: left;
-            ;">
-              Why will you Choose 
-            </h1>
-            <h1 style="font-family: Helvetica;
-            padding-top: 20px;
-            font-size: 45px;
-            font-weight: 400;
-            line-height: 35px;
-            letter-spacing: 0em;
-            text-align: left;
-            ;">our Services?</h1>
-            <p style="font-family: Helvetica;
-            font-size: 15px;
-            padding-top: 20px;
-            font-weight: 400;
-            line-height: 25px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: rgba(135, 134, 134, 1);
-            ">Efficient, Friendly, Residential & Commercial Cleaners. Your </p>
-            <p style="font-family: Helvetica;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 0px;
-            letter-spacing: 0em;
-            text-align: left;
-            padding-bottom: 18px;
-            color: rgba(135, 134, 134, 1);
-            ">Satisfaction is guaranteed.</p>
+        <div class="col-md-6  col-sm-12 about-us-content">
+            <h2 class="about-us-heading">___ About us ___</h2>
+            <h1 class="service-why-choose-heading">Why will you Choose</h1>
+            <h1 class="service-why-choose-subheading">our Services?</h1>
+            <p class="service-description">Efficient, Friendly, Residential & Commercial Cleaners. Your Satisfaction is guaranteed.</p>
             <div>
               <label for="checkbox1" class="form-check-label">
                 <span id="checkbox1" class="custom-checkbox checked"></span>
@@ -111,14 +63,11 @@
                 7 days a week service
               </label>
             </div>
-            <button class="btn btn-warning" routerLink="/service" style="margin-top: 20px; color: #FFF" >View Details</button>
+            <button class="btn btn-warning view-details-btn" routerLink="/service">View Details</button>
         </div>
     </div> 
-    
 </div>
 
-
-<app-faq ></app-faq>
+<app-faq></app-faq>
 
 <app-reviews></app-reviews>
-  

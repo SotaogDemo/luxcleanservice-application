@@ -12,17 +12,12 @@
 .landing-content {
   position: relative;
   top: 61%;
- 
   transform: translateY(-50%);
   text-align: left;
 }
 
-.cont{
+.cont {
   margin-left: 120px;
-}
-
-.navitem{
-  color: rgba(81, 101, 123, 1);
 }
 
 .company-name1 {
@@ -37,16 +32,15 @@
   padding-top: 20px;
 }
 
-
-.company-name2{
-    font-family: Helvetica;
-    font-size: 70px;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(81, 101, 123, 1);
-    position: relative;
+.company-name2 {
+  font-family: Helvetica;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(81, 101, 123, 1);
+  position: relative;
 }
 
 .custom-checkbox {
@@ -58,13 +52,13 @@
   border-radius: 4px;
   cursor: pointer;
   vertical-align: middle;
-
-
 }
+
 .custom-checkbox.checked {
   background-color: rgba(236, 181, 2, 1);
   border-color: rgba(236, 181, 2, 1);
 }
+
 .custom-checkbox.checked::after {
   content: '\2714'; /* Unicode checkmark symbol */
   color: #fff;
@@ -75,7 +69,7 @@
   display: block;
 }
 
-.form-check-label{
+.form-check-label {
   font-family: Helvetica;
   font-size: 14px;
   font-weight: 400;
@@ -83,25 +77,21 @@
   letter-spacing: 0em;
   text-align: left;
   color: rgba(81, 101, 123, 1);
-
 }
-
 
 .company-text {
   padding-top: 20px;
   width: 540px;
-  //height: 70px;
   font-family: Helvetica;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
-  // letter-spacing: 0em;
   text-align: left;
   color: rgba(81, 101, 123, 1);
   position: relative;
 }
 
-.company-number{
+.company-number {
   padding-top: 25px;
   width: 297px;
   position: relative;
@@ -119,10 +109,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 35px;
-  padding-top: 10px;
-  padding-right:  12px;
-  padding-left:  12px;
-  padding-bottom: 10px;
+  padding: 10px 12px;
   border-radius: 11px;
   gap: 6px;
   top: 14px;
@@ -131,33 +118,37 @@
   background-color: rgba(236, 181, 2, 1);
 }
 
-.A{
+.book-now-btn:hover {
+  background-color: #F5F5F5;
+  color: rgba(236, 181, 2, 1);
+}
+
+.A {
   background-image: url('/assets/home-images/A.jpg');
   background-size: cover;
   background-position: center;
   width: 230px;
-  height: 370px;  
+  height: 370px;
 }
 
-.B{
+.B {
   width: 230px;
   height: 100px;
   border-radius: 12px;
   box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.1);
 }
 
-
-.D{
+.D {
   background-image: url('/assets/home-images/D.jpg');
   background-size: cover;
   background-position: center;
   width: 230px;
-  height: 370px; 
+  height: 370px;
   position: relative;
-  top: -67%;  
+  top: -67%;
 }
 
-.C{
+.C {
   width: 230px;
   height: 100px;
   border-radius: 12px;
@@ -165,75 +156,187 @@
   margin-top: 20px;
 }
 
-
-
-.book-now-btn:hover {
-  background-color: #F5F5F5; /* Change background color on hover */
-  color: rgba(236, 181, 2, 1);
-}
-
-// About Us: 
-
-// .about-us-container {
-//   overflow: hidden;
-//   background-color: #F5F5F5; /* Plain background color */
-//   background-size: cover;
-//   text-align: center;
-//   padding-top: 10px;
-// }
-
-
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-}
-
-
-.col-md-6{
+.col-md-6 {
   height: 550px;
 }
-.container{
+
+.container {
   margin-top: 20px;
-  background-color:#fff;
+  background-color: #fff;
   margin-left: 120px;
-  display:grid;
+  display: grid;
   grid-template-columns: 250px 250px;
-  //grid-row: 1000px 1000px;
-  //grid-column-gap: 20px;
-  //rid-row-gap: 20px;
+  max-height: 100%;
+
   .box{
-    background-color:#333;
-    padding:20px;
-    border-radius:10px;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-    font-family:sans-serif;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: sans-serif;
   }
-
 }
-
-
 
 .about-us-content {
   overflow: hidden;
   padding: 20px;
-  padding-left: 0px
+  padding-left: 0px;
 }
 
 .about-us-container h2 {
   margin-bottom: 20px;
-  color: #364F6B; /* Heading color */
+  color: #364F6B;
 }
 
 .about-us-container p {
   font-size: 120%;
-  color: #000; /* Paragraph color */
-  // margin-bottom: 20px; /* Add bottom margin for spacing between paragraphs */
+  color: #000;
 }
 
+.view-details-btn {
+  margin-top: 20px;
+  color: #FFF;
+}
+
+
+.service-description{
+  font-family: Helvetica; font-size: 15px !important; padding-top: 20px; font-weight: 400; line-height: 25px; letter-spacing: 0em; text-align: left; color: rgba(135, 134, 134, 1) !important;
+}
+
+.service-why-choose-heading{
+  font-family: Helvetica; font-size: 45px; font-weight: 400; line-height: 35px; letter-spacing: 0em; text-align: left;
+}
+
+
+.service-why-choose-subheading{
+  font-family: Helvetica; padding-top: 20px; font-size: 45px; font-weight: 400; line-height: 35px; letter-spacing: 0em; text-align: left;
+}
+
+
+.about-us-heading{
+  font-family: Helvetica; font-size: 17px; font-weight: 400; line-height: 35px; letter-spacing: 0em; text-align: left; color: rgba(81, 101, 123, 1);
+}
+
+
+
+.box-content{
+  .first-line{
+    text-align: center; padding-bottom: 0px; margin-bottom: 0px; color: rgba(81, 101, 123, 1);
+  }
+  
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .landing-content {
+    margin-left: 0; /* Reset margin */
+    padding: 0 20px; /* Add padding for better readability */
+    top: 69%;
+  }
+
+  .landing-image {
+    height: 286px; /* Adjust height for responsive behavior */
+  }
+
+  .cont {
+    margin-left: 0; /* Reset margin */
+  }
+
+  .company-name1,
+  .company-name2 {
+    font-size: 18px; /* Decrease font size for smaller screens */
+    line-height: 0px; /* Adjust line height */
+  }
+
+  .company-text {
+    width: auto; /* Allow text to wrap on smaller screens */
+    font-size: 13px;
+    padding-top: 20px;
+    //width: 540px;
+    font-family: Helvetica;
+   // font-size: 18px;
+   margin-bottom: 0px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: #51657b;
+    position: relative;
+  }
+
+  .company-number {
+    width: auto; /* Allow text to wrap on smaller screens */
+    padding-top: 0px;
+    font-size: 12px;
+    font-weight: 550;
+  }
+
+  .book-now-btn {
+    font-size: 12px;
+    padding: 8px 10px;
+    top: -9%;
+  }
+
+  .container {
+    margin-left: 0; /* Reset margin */
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+  }
+
+  .col-md-6 {
+    height: auto; /* Adjust height for smaller screens */
+    width: 100%;
+    max-width: 400px;
+  }
+
+
+
+
+  .box {
+    width: 100%; /* Make boxes take full width on smaller screens */
+    margin-bottom: 20px; /* Add margin between boxes */
+  }
+
+  .A, .D{
+    display: none !important;
+  }
+
+  .C{
+    margin-top: 0px;
+  }
+
+  .box-content {
+    text-align: center; /* Center box content */
+  }
+
+  .about-us-content {
+    padding: 0 20px; /* Add padding for better readability */
+  }
+
+  .row{
+    max-width: 100%;
+  }
+
+  .service-description,
+  .service-why-choose-heading{
+    font-size: 25px;
+  }
+  .service-why-choose-subheading{
+    font-size: 25px;
+    line-height: 0px;
+  }
+  .about-us-heading {
+    font-size: 22px; /* Decrease font size for smaller screens */
+  }
+  
+
+  .view-details-btn {
+    font-size: 14px; /* Decrease font size for smaller screens */
+    padding: 8px 10px; /* Adjust padding for smaller screens */
+  }
+}

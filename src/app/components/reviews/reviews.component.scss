@@ -77,3 +77,68 @@
     left: 5em;
   }
 }
+
+
+
+/* Your existing CSS */
+
+/* Additional CSS for responsiveness */
+
+@media (max-width: 767px) {
+  .testimonial-slider {
+    padding: 2em 20px 3em; /* Adjust padding for smaller screens */
+  }
+  .testimonial-title {
+    color: #000; /* Change text color for better visibility */
+  }
+  .testimonial-title h2 {
+    font-size: 20px; /* Decrease font size for smaller screens */
+    line-height: 1.5; /* Adjust line height for smaller screens */
+  }
+  .card {
+    margin: 0 5px; /* Adjust margin for smaller screens */
+    height: auto /* Change height to auto for responsiveness */ !important;
+    width: auto !important;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 74%; /* Center align carousel controls vertically */
+    transform: translateY(-50%);
+    width: 17px;
+  }
+
+  .tempo{
+    font-size: 15px !important;
+    font-weight: 200;
+    color: grey;
+  }
+  .company-name1 {
+    font-size: 36px; /* Decrease font size for smaller screens */
+    line-height: 60px; /* Adjust line height */
+    text-align: center;
+    color: #fff;
+  }
+
+  
+
+.landing-image {
+  height: 250px; 
+}
+}
+
+@media (min-width: 768px) {
+  .carousel-inner {
+    padding: 1em; /* Add padding for better layout */
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    left: 1em; /* Adjust position of carousel controls */
+    top: 95%; /* Adjust top position of carousel controls */
+    transform: translateY(-50%);
+  }
+  .carousel-control-next {
+    left: 5em; /* Adjust left position of next carousel control */
+  }
+
+ 
+}

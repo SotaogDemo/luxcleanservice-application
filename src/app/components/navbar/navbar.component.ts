@@ -22,6 +22,12 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['/service'])
   }
 
+  isMenuOpen: boolean = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
   reloadPage(): void {
     this.location.replaceState('/'); // Navigate to the current route (home in this case)
     window.location.reload(); // Reload the page

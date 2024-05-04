@@ -98,3 +98,45 @@
   color:#f0f0f0
 
 }
+
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px; /* Reduce padding for smaller screens */
+  }
+
+  .faq-section {
+    font-size: 16px; /* Decrease font size for smaller screens */
+    line-height: 24px; /* Adjust line height for smaller screens */
+  }
+
+  .faq-item {
+    margin: 10px 0; /* Reduce vertical margin for smaller screens */
+    border-bottom: none; /* Remove border bottom for smaller screens */
+  }
+
+  .question {
+    padding: 10px 0; /* Reduce vertical padding for smaller screens */
+  }
+
+  .question h3 {
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+
+  .card-t {
+    margin: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .question-fq {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .question-dt {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .col-md-6 {
+    text-align: center; /* Center align content on smaller screens */
+    margin-bottom: 20px; /* Add margin bottom for smaller screens */
+  }
+}
