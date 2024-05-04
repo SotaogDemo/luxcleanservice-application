@@ -120,3 +120,23 @@ li {
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
   }
+
+
+
+  @media screen and (max-width: 768px) {
+    .container {
+        padding-left: 7px !important;
+        padding-right: 7px !important;
+    }
+    .custom-container {
+        flex-direction: column;
+    }
+    .image-container {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px; /* Adjusted margin-top */
+    }
+    .image-container img {
+        width: 100%;
+    }
+}

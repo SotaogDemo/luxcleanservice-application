@@ -1,6 +1,5 @@
 :host {
     font-family: Helvetica; /* Fallback font families */
-    background-color: rgba(249, 251, 254, 1);
 }
 
 
@@ -15,7 +14,7 @@ body{
 
 .page-title {
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .page-title h1 {
@@ -33,32 +32,19 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Adjust the gap as needed */
-    /* Increased overall box size */
+    max-width: 1000px; /* Increased overall box size */
     margin-left: 0%;
     margin-right: 0%;
     padding-left: 160px;
     padding-right: 160px;
     max-width: 100%;
-    //align-items: center;
 }
 
-.living-container {
+.custom-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; /* Adjust as needed */
-}
-
-.kitchen-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px; /* Adjust as needed */
-}
-
-.bathroom-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px; /* Adjusted margin-bottom */
+    margin-top: 20px; /* Adjusted margin-top */
+    margin-bottom: 30px; /* Adjusted margin-bottom */
 }
 
 .column {
@@ -88,21 +74,7 @@ body{
     margin-left: 20px;
 }
 
-.living-container .image-container img {
-    width: 120%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    border-radius: 8px;
-}
-
-.kitchen-container .image-container img {
-    width: 120%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    border-radius: 8px;
-}
-
-.bathroom-container .image-container img {
+.image-container img {
     width: 120%;
     height: 100%;
     object-fit: cover; /* Maintain aspect ratio and cover the container */
@@ -137,4 +109,34 @@ li {
     font-size: 20px; /* Increased font size */
     line-height: 1.5;
     color: #364F6B;
+}
+
+.book-now-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .container {
+        padding-left: 7px !important;
+        padding-right: 7px !important;
+    }
+    .custom-container {
+        flex-direction: column;
+    }
+    .image-container {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px; /* Adjusted margin-top */
+    }
+    .image-container img {
+        width: 100%;
+    }
 }
