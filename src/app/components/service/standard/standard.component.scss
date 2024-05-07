@@ -139,4 +139,29 @@ li {
     .image-container img {
         width: 100%;
     }
+
+
+    .page-title h1 {
+        padding-top: 70px;
+        font-size: 150%; /* Adjusted font size */
+        margin-bottom: 0px;
+    }
+
+    .page-title{
+        margin-bottom: 0px;
+    }
+
+    .section{
+        p{
+            font-size: 18px;
+        }
+
+        li{
+            font-size: 16px;
+        }
+
+        ul{
+            margin-left: 0px;
+        }
+    }
 }
